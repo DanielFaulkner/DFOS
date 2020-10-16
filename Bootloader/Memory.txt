@@ -1,0 +1,11 @@
+Memory locations used:
+Bootloader:
+First stage - Normal BIOS loaded location 0x7C00:0x0000
+Second stage - Loaded to 0x1000:0x0000
+Root dir/FAT table - Loaded to 0x1000:0x1000
+
+Kernel:
+Location - Loaded to 0x3000:0x0000
+
+Other:
+Stack - Loaded to 0x9000 : (0xffff to start with)

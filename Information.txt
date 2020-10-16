@@ -1,0 +1,33 @@
+Readme file for version 0.04a of DF-DOS
+
+Bootloader - Ver 0.5 (FAT12)
+Kernel - Ver 0.04a
+Installer - N/A (Some DOS batch files)
+
+Once loaded type 'help' at the DF-DOS prompt for a list of commands.
+
+Installation:
+I hope to start on an installer soon, however unfortunatly at this stage
+I have yet to start work on one.
+There are some batch (.bat) files around in some directory's to help you
+with some parts of the compile and install process.
+Also there are half built .sh files and make files for the compile/
+install process in linux.  But those have not been tested and are
+unlikely to work initially in this version (I will improve them at a
+later date)
+
+Until that then however I have included in each directory an Install.txt
+file which should document how to get to the next stage.
+
+If you are new to this and just want to see it work please look in the
+compiled directorys.
+
+If you change the code I image you know how to compile/install it.
+However I have installation instructions for use from the source stage.
+
+The instructions included are for installing to the floppy disk.
+Once installed reboot with the floppy disk in the drive.
+And assuming that the BIOS is set to first boot from the floppy drive
+it should boot up DF-DOS (if not check the BIOS documentation)
+If it fails to work please re-read this documentation and follow the 
+instructions carefully before getting in contact.

@@ -1,0 +1,12 @@
+Ver 0.04a Contains a more advanced read-only FAT12 driver. Other
+touchups have been made else where in the program also. 'ls'
+command now present (in DOS that would be 'dir', will duplicate
+with DOS terminology later).
+
+Ver 0.03 Contains a simple FAT12 driver. It can read files and run
+very simple DOS binary files. Also the console has been improved.
+
+Ver 0.02 contains a functional (though not perfected) interrupt
+handler and functions. (trying to be DOS compatable)
+
+Note: Not all interrupts functions have been made (by a long way)

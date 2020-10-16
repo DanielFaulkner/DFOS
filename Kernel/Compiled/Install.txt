@@ -1,0 +1,30 @@
+DF-DOS Installation Instructions
+(Customised for version 0.04)
+
+Make sure to have the floppy disk containing the bootloader in the
+floppy drive, and that the OS has re-read the FAT table on the floppy
+disk by means of removing the disk reading another disk and
+re-inserting the disk containing the bootloader.
+Then copy the resulting file to the floppy disk.
+
+DOS:
+Type:
+
+c:\kernel\compiled> copy KERNEL.COM a:\KERNEL.COM
+
+For help please consult the DOS documentation
+
+Linux:
+(Make sure the floppy disk is mounted)
+Type:
+
+~/kernel/compiled> cp KERNEL.COM /floppy/KERNEL.COM
+
+For help please consult the linux documentation.
+
+Once you have got to this stage and the floppy disk contains the boot sector
+and the kernel you are ready to reboot and try out the DF-DOS floppy.
+
+I will not pretend that this is usefull. But it may help those interested
+in OS development. And it proves that this project does mean business.
+Not an other idea only project.

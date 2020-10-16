@@ -1,0 +1,34 @@
+Bootloader Manual Install Instructions
+(Customised for version 0.5)
+
+I assume that the reader will know at least the basics of DOS/Linux and
+can work out the meaning of the instructions.
+
+To compile:
+(You will require the NASM compiler, unless you are willing to re-write
+the source for an alternative compiler)
+
+DOS:
+Type:
+c:\bootloader\source> nasm ownbl5s1.asm
+
+c:\bootloader\source> nasm ownbl5s2.asm
+
+This will output: ownbl5s1 and ownbl5s2
+If you want to check to size type 'dir' to confirm the size of ownbl5s1 to be 512 bytes.
+
+Linux:
+Type:
+~/bootloader/source> nasm ownbl5s1.asm
+
+~/bootloader/source> nasm ownbl5s2.asm
+
+This will output: ownbl5s1 and ownbl5s2
+If you want to check the size type 'ls -l' to confirm the size of ownbl4s1 to be 512 bytes.
+
+If for some reason the instructions above do not work please consult the 
+documentation which came with your version of the NASM x86 compiler.
+(This was written and tested with NASM version 0.98 & 0.98.38)
+
+Or for linux type: 'man nasm'
+This should display the correct command prompt options.

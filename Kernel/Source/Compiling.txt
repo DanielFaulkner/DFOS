@@ -1,0 +1,31 @@
+DF-DOS kernel install instructions
+(Customised for Version 0.04)
+
+Files that should be included in the source directory:
+kernel.asm, data.inc, txtio.inc, console.inc, commands.inc, intrupt.inc,
+IntFuncs.inc, int20.inc, int21.inc, int22.inc, int23.inc, int24.inc,
+int25.inc, int26.inc, int27.inc, int28.inc, int29.inc, int2e.inc,
+int2f.inc, HWtests.inc, convers.inc, FAT12drv.inc, FAT12Wdrv.inc
+
+If any of those are missing it is likly that the compile will fail.
+A detailed note on what each file contains will be made later or when
+there is enough demand for it.
+
+Compile:
+
+DOS:
+(Requires NASM 16bit DOS version)
+C:\kernel\source> nasm kernel.asm -o KERNEL.COM
+
+Outputs kernel as KERNEL.COM in this directory
+
+Linux:
+(Requires NASM)
+c:\kernel\source> nasm kernel.asm -o KERNEL.COM
+
+Should output kernel as KERNEL.COM in this directory
+
+If this varies or you have any problem please consult the documentation
+which came with your version of the NASM x86 compiler.
+
+It has been tested using NASM version 0.98 & 0.98.38

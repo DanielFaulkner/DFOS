@@ -1,0 +1,26 @@
+If you have a DOS system you can use the Batch files here to do the
+work for you. However it may not work on all computers so be prepared
+to install following the instructions manually. You must keep the
+zipped files directory structure for this to work.
+
+Type at the prompt: (Optional as compiled file pre-existing)
+...\Ver004\Kernel> Compile
+
+This will make the source into a compiled kernel and store the image
+in the compiled directory.
+However to do this you MUST have nasm (DOS 16bit version) in your path.
+To check nasm is in the path try typing nasm at a DOS prompt and
+checking nasm does start (even in directorys without the nasm file).
+(Later versions may come with a small NASM compiler included)
+
+Type at the prompt:
+...\Ver004\Kernel> Install
+
+This will copy the kernel image to a floppy disk so allowing you to
+try the operating system.
+However the floppy disc MUST all ready have the boot loader written
+to it.
+
+If you have Linux make files and .sh files will be created at a later
+date.
+Also a graphical install program may be put together at a later date.

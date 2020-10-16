@@ -1,0 +1,20 @@
+PrintMsg Int - Works ok
+ProgramTerminate Int's - Works (But special functions which pass values onto the OS are not implemented)
+
+All other interrupts have not been properly tested.
+They will be tested as utilites/drivers/applications which need them are developed.
+
+Only a certain number of interrupts are working currently.
+Most of the current interrupt functions are for stdio style stuff.
+
+For a complete list either look at the source or request a list of
+functions which are currently implemented.
+
+If you try to run an un-implemented function the program will not
+halt but you will not get any output from the interrupt call.
+This should allow some programs to continue running dispite that
+function is not working. (Depends on application error handling)
+
+Note - A number of graphics demo's will work currently. To find
+a selection of .com files that may or may not work check:
+www.256b.com.

@@ -1,0 +1,6 @@
+Version 004 should include the following items before release:
+* Add left/right arrow key support to the console
+* A basic dir/ls command. (Done but not polished off yet)
+* A write FAT12 driver
+* Simple filesystem interrupt functions
+(Some test applications possible)

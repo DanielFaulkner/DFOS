@@ -1,0 +1,21 @@
+All current bugs are to do with the console which will soon be fixed.
+I hope to move the console out of the kernel eventually.
+Failing that at least re-write it using the interrupt handler for some stuff.
+
+Known bugs:
+The arrow keys won't move the cursor in the console.
+The OS is almost all case sensitive.
+- (Commands - All lower case, Files - This varies depending on the case you save it in)
+Some interrupts only partially work or may not work at all. Expect some applications
+to not work, certainly if they use file related interrupts.
+
+You MUST force the OS in the installation procedure to re-read the floppy before copying
+the kernel or any other file onto the floppy disk containing the bootloader.
+
+Recently fixed bugs:
+Clear screen puts 4 0's at the top of the screen.
+The commands will work if only half entered.
+The backspace button DOES work but there is no evidence on the screen.
+If you backspace back to much the console will freeze.
+
+Found any more bugs? If so please e-mail me. (daniel.faulkner@cwcom.net)

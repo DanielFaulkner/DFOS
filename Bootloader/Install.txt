@@ -1,0 +1,16 @@
+If you have a DOS type system and want to take a short cut you can
+use the batch files in this directory - May not work on all computers
+so be prepared to follow the instructions in the source directory.
+
+Type:
+...\Ver003\Bootloader> Compile
+
+This will compile the boot loader source files.
+You MUST have nasm in your path for this to work. (Check by typing
+nasm at the DOS prompt, if it works thats fine. Also keep the
+same directory structure as it was zipped in)
+
+Currently I am afraid the installation to the floppy drive has no
+installer what so ever.
+Linux make files and .sh files will come in later versions,
+along with a graphical install program.

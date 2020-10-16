@@ -1,0 +1,54 @@
+Bootloader Installation Instructions
+(This is customised for version 0.5 of the bootloader)
+
+I will assume that you know DOS/Linux enough to understand the examples.
+However I will try to make it easy for you to understand.
+
+Copying the compiled files to the floppy disk/image:
+
+DOS:
+(Requires debug, which comes as default normally)
+(Make sure a blank floppy disk is in the drive)
+Type:
+
+c:\bootloader\compiled> debug Ownbl5s1
+- w 100 0 0 1
+- q
+
+c:\bootloader\compiled> debug Ownbl5s2
+- w 100 0 1 3
+- q
+
+For extra help from debug type:
+- ?
+...
+- q
+
+*** Important - on many OS's (windows esp) you may well find that
+you have to force the OS to re-read the floppy FAT table so it won't
+over write the bootloader with files. This is best done by a reboot
+or by inserting and reading another disk then re-inserting/reading
+the floppy with the bootloader.
+*** Warning - Debug or similar programs can, if used badly, seriously
+damage your drives please follow the instructions carefully and
+if unsure check the documentation or ask for help.
+
+Linux:
+(Requires dd, which comes as default in most distrobutions)
+(There is no need to mount the floppy disk before typing the commands,
+I recommend typeing the commands with the floppy disk un mounted,
+but you will require a blank floppy disk in the drive)
+Type:
+~/bootloader/compiled> dd if=Ownbl5s1 bs=512 of=/dev/fd0
+
+~/bootloader/compiled> dd if=Ownbl5s1 bs=512 seek=1 of=/dev/fd0
+
+If this does not work please check the man page/documentation.
+Try typing: 'man dd'
+This will give you an idea of the command line options.
+
+(This WILL destroy any data on the floppy disk so please remember to 
+use a blank disk or a disk containing no important data, the filesystem
+it is formatted in doesn't matter at this stage)
+
+The resulting floppy should with some luck be FAT12 compatable.
