@@ -1,6 +1,6 @@
 ; This is a simple kernel
 
-; By DFTECH: Daniel Rowell Faulkner
+; By Daniel Rowell Faulkner
 
 [BITS 16]
 [ORG 0x0000]
