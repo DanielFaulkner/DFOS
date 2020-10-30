@@ -17,5 +17,3 @@ Clear screen puts 4 0's at the top of the screen.
 The commands will work if only half entered.
 The backspace button DOES work but there is no evidence on the screen.
 If you backspace back to much the console will freeze.
-
-Found any more bugs? If so please e-mail me. (daniel.faulkner@cwcom.net)
